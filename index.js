@@ -12,7 +12,7 @@ mongoDb();
 //     );
 //     next();
 // })
-app.use(cors( {origin: 'http://localhost:3000'}));
+app.use(cors( {origin: '*'}));
 
 app.get('/',(req,res)=>{
     res.send('Hello World')
